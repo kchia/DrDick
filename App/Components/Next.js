@@ -1,5 +1,4 @@
 import React, {
-  AppRegistry,
   Component,
   StyleSheet,
   Text,
@@ -8,12 +7,15 @@ import React, {
   Navigator
 } from 'react-native';
 
+import colors from './_colors';
+import appColors from './_appColors';
+
 class Next extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.container}>
           <TouchableHighlight
-            underlayColor={"#0C94B9"}
+            underlayColor={colors.blue_4}
             onPress={this.props.nextRoute.bind(this, this.props.nextRouteInfo)}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Next</Text>
@@ -25,27 +27,28 @@ class Next extends Component {
 }
 
 const styles = StyleSheet.create({
+
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    flex: 1
   },
+
   button: {
-     borderTopWidth: 2, 
-     borderColor: '#19c3f5',
+    borderTopWidth: 2,
+    borderColor: appColors.borderColorNext,
     marginTop: 30,
     paddingTop: 15,
     paddingBottom: 20,
     paddingLeft: 45,
     paddingRight: 45,
     alignItems: 'center',
-    backgroundColor: '#0483ad',
+    backgroundColor: appColors.buttonColorNext,
   },
+
   buttonText: {
-    color: '#fff',
+    color: appColors.defaultTextColor,
     fontSize: 25
   },
+
 });
 
 export default Next

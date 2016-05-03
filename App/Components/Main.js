@@ -1,5 +1,4 @@
 import React, {
-  AppRegistry,
   Component,
   StyleSheet,
   Text,
@@ -9,42 +8,47 @@ import React, {
   Image
 } from 'react-native';
 
+import colors from './_colors';
+import appColors from './_appColors';
+
 class Main extends Component {
+
   render() {
     return (
-        <Navigator
-          renderScene={this.renderScene.bind(this)}
-          />
-
-      );
-
+      <Navigator renderScene={this.renderScene.bind(this)} />
+    );
   }
+
   renderScene(){
     return (
       <View style={styles.container}>
         <Image
           style={styles.icon}
-          source={require('../Images/stetoscope-banana.png')}
-        />
+          source={require('../Images/stetoscope-banana.png')} />
         <Text style={styles.title}>
           Dr. Dick
         </Text>
         <Text style={styles.subtitle}>
           Our Dick Helps Keep Yours Healthy
         </Text>
-        <TouchableHighlight underlayColor={"#ffffff"}
+        <TouchableHighlight underlayColor={colors.white}
           onPress={this.props.nextRoute.bind(this, { id: 'Setup', title: 'Setup' })}>
           <View style={styles.button}>
-            <Text style={styles.buttonText}>Get Started</Text>
-          </View>      
+            <Text style={styles.buttonText} >
+              Get Started
+            </Text>
+          </View>
         </TouchableHighlight>
-        <Text style={{fontSize: 16, paddingTop: 20, color: '#777'}}>Already have an account?</Text>
-
-        <Text style={{fontSize: 16, paddingTop: 5, color: 'blue'}}>Login</Text>
-
+        <Text style={styles.text}>
+          Already have an account?
+        </Text>
+        <Text style={styles.textLogin}>
+          Login
+        </Text>
       </View>
-        );
+    );
   }
+
 }
 
 const styles = StyleSheet.create({
@@ -52,7 +56,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: appColors.backgroundColorMain,
+  },
+  icon: {
+    height: 150,
+    width: 150,
+    overflow: 'visible'
   },
   title: {
     fontSize: 50,
@@ -61,9 +70,9 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     textAlign: 'center',
-    color: '#777777',
+    color: appColors.textGrey,
     marginBottom: 30,
-    marginLeft: 10, 
+    marginLeft: 10,
     marginRight: 10,
     fontSize: 18
   },
@@ -73,18 +82,23 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
     paddingRight: 40,
     alignItems: 'center',
-    backgroundColor: '#00bbbb',
+    backgroundColor: appColors.buttonColorMain,
     borderRadius: 50,
   },
   buttonText: {
-    color: '#fff',
+    color: appColors.defaultTextColor,
     fontSize: 25
   },
-  icon: {
-    height: 150,
-    width: 150,
-    overflow: 'visible'
-  }
+  text: {
+    fontSize: 16,
+    paddingTop: 20,
+    color: appColors.textGrey
+  },
+  textLogin: {
+    fontSize: 16,
+    paddingTop: 5,
+    color: 'blue'
+  },
 });
 
 export default Main
