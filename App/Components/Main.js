@@ -6,10 +6,10 @@ import React, {
   TouchableHighlight,
   Navigator,
   Image
-} from 'react-native';
+} from 'react-native'
 
-import colors from './_colors';
-import appColors from './_appColors';
+import colors from './_colors'
+import appColors from './_appColors'
 
 class Main extends Component {
 
@@ -24,7 +24,7 @@ class Main extends Component {
       <View style={styles.container}>
         <Image
           style={styles.icon}
-          source={require('../Images/stetoscope-banana.png')} />
+          source={require('../images/stetoscope-banana.png')} />
         <Text style={styles.title}>
           Dr. Dick
         </Text>

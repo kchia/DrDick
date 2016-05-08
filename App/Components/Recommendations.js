@@ -5,11 +5,11 @@ import React, {
   View,
   TouchableHighlight,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import Header from "./Header";
-import Card from "./Card";
-import appColors from "./_appColors";
+import Header from "./Header"
+import Card from "./Card"
+import appColors from "./_appColors"
 
 class Recommendations extends Component {
 

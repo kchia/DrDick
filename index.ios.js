@@ -2,15 +2,15 @@ import React, {
   AppRegistry,
   Component,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import Main from "./App/Components/Main";
-import Setup from "./App/Components/Setup";
-import Questionnaire from "./App/Components/Questionnaire";
-import Menu from "./App/Components/Menu";
-import Loading from "./App/Components/Loading";
-import Recommendations from "./App/Components/Recommendations";
-import Map from "./App/Components/Map";
+import Main from "./App/components/Main"
+import Setup from "./App/components/Setup"
+import Questionnaire from "./App/components/Questionnaire"
+import Menu from "./App/components/Menu"
+import Loading from "./App/components/Loading"
+import Recommendations from "./App/components/Recommendations"
+import Map from "./App/components/Map"
 
 class DrDick extends Component {
 

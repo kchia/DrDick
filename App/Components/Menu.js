@@ -5,11 +5,11 @@ import React, {
   View,
   TouchableHighlight,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import Header from './Header';
-import colors from './_colors';
-import appColors from './_appColors';
+import Header from './Header'
+import colors from './_colors'
+import appColors from './_appColors'
 
 class Menu extends Component {
 

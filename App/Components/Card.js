@@ -4,12 +4,12 @@ import React, {
   Text,
   View,
   TouchableHighlight
-} from 'react-native';
+} from 'react-native'
 
-import Recommendations from './Recommendations';
-import Map from './Map';
-import colors from './_colors';
-import appColors from './_appColors';
+import Recommendations from './Recommendations'
+import Map from './Map'
+import colors from './_colors'
+import appColors from './_appColors'
 
 class Card extends Component {
 

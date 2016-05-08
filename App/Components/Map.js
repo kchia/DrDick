@@ -5,10 +5,10 @@ import React, {
   TouchableHighlight,
   Navigator,
   MapView
-} from 'react-native';
+} from 'react-native'
 
-import Header from './Header';
-import appColors from './_appColors';
+import Header from './Header'
+import appColors from './_appColors'
 
 
 var markers = [
@@ -79,7 +79,5 @@ const styles = StyleSheet.create({
   }
 
 });
-
-
 
 export default Map

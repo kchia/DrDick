@@ -3,9 +3,9 @@ import React, {
   Text,
   View,
   StyleSheet
-} from 'react-native';
+} from 'react-native'
 
-import appColors from './_appColors';
+import appColors from './_appColors'
 
 class Loading extends Component {
 

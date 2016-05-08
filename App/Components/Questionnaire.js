@@ -4,9 +4,9 @@ import React, {
   View,
   TouchableHighlight,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import Question from './Question';
+import Question from './Question'
 
 const questionCollection = [
   {

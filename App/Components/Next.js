@@ -5,10 +5,10 @@ import React, {
   View,
   TouchableHighlight,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import colors from './_colors';
-import appColors from './_appColors';
+import colors from './_colors'
+import appColors from './_appColors'
 
 class Next extends Component {
   render() {

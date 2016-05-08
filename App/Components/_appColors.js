@@ -1,4 +1,4 @@
-import colors from './_colors';
+import colors from './_colors'
 
 const appColors = {
   backgroundColorPrimary: colors.blue_4,
@@ -14,6 +14,6 @@ const appColors = {
   buttonColorNext: colors.blue_3,
   textGrey: colors.grey_1,
   defaultTextColor: colors.white
-}
+};
 
 export default appColors

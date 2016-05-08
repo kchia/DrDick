@@ -5,11 +5,11 @@ import React, {
   TextInput,
   View,
   Navigator
-} from 'react-native';
+} from 'react-native'
 
-import Next from './Next';
-import Header from './Header';
-import appColors from './_appColors';
+import Next from './Next'
+import Header from './Header'
+import appColors from './_appColors'
 
 class Setup extends Component {
 

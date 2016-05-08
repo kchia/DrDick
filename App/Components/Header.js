@@ -4,9 +4,9 @@ import React, {
   StyleSheet,
   TouchableHighlight,
   View
-} from 'react-native';
+} from 'react-native'
 
-import appColors from './_appColors';
+import appColors from './_appColors'
 
 class Header extends Component {
 
@@ -73,6 +73,6 @@ const styles = StyleSheet.create({
     color: appColors.defaultTextColor
   }
 
-})
+});
 
 export default Header
